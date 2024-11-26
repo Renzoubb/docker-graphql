@@ -23,7 +23,7 @@ jobs:
         DOCKER_PW: ${{ secrets.DOCKER_PW }}
       run: | 
         echo "Iniciando login"
-        docker login -u $DOCKER_USER -p DOCKER_PW
+        docker login -u $DOCKER_USER -p $DOCKER_PW
         echo "Fin del login"
     
 #    - name: Build the Docker image
