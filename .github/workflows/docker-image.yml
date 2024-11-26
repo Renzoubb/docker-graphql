@@ -22,7 +22,7 @@ jobs:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PW: ${{ secrets.DOCKER_PW }}
       run: | 
-        echo: "Iniciando login"
+        echo "Iniciando login"
         docker login -u $DOCKER_USER -p DOCKER_PW
         echo "Fin del login"
     
